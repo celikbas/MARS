@@ -1,0 +1,17 @@
+{
+    "name": "zeki/uubf-l",
+    "description": "uubf-l kayit sistemi",
+    "type": "project",
+    "require": {
+        "sunaryohadi/ezsql-mysqli": "^1.2"
+    },
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Zeki Celikbas",
+            "email": "celikbas@itu.edu.tr"
+        }
+    ],
+    "require-dev": {
+    }
+}

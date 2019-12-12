@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "bfac82f1774c36cce71ad7c21e592437",
+    "packages": [
+        {
+            "name": "sunaryohadi/ezsql-mysqli",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunaryohadi/ezsql-mysqli.git",
+                "reference": "8645e1103ce62307a6dcc4b2bcf04a895ba3d195"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunaryohadi/ezsql-mysqli/zipball/8645e1103ce62307a6dcc4b2bcf04a895ba3d195",
+                "reference": "8645e1103ce62307a6dcc4b2bcf04a895ba3d195",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "mysqli/ez_sql_mysqli.php",
+                    "shared/ez_sql_core.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Vincent",
+                    "email": "webmaster@justinvincent.com"
+                },
+                {
+                    "name": "Sunaryo Hadi"
+                }
+            ],
+            "description": "Fork ezSQL, just for mysqli. With additional prepare() function from WPdb",
+            "time": "2017-05-20T08:07:21+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
