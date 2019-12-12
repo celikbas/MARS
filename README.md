@@ -9,6 +9,7 @@ Mailman Registration System - Collect email addresses to add mailman list manage
 $ git clone https://github.com/celikbas/MARS.git
 $ cd MARS
 $ composer install
+# create sql tables from list_subs.sql file
 $ vim config_sample.php && mv config_sample.php config.php
 ```
 
