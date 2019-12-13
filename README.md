@@ -15,7 +15,7 @@ $ vim config_sample.php && mv config_sample.php config.php
 
 ## Todo:
 
-- [x] Finish my changes
+- [x] Screenshout added
 - [ ] Multilanguage support
 - [ ] Subscribe to more than one list
 
