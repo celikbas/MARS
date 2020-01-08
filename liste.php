@@ -9,9 +9,9 @@ $pass = $_SERVER['PHP_AUTH_PW'];
 $validated = (in_array($user, $valid_users)) && ($pass == $valid_passwords[$user]);
 
 if (!$validated) {
-    header('WWW-Authenticate: Basic realm="My Realm"');
+    header('WWW-Authenticate: Basic realm="Lütfen giriş yapınız"');
     header('HTTP/1.0 401 Unauthorized');
-    die("Not authorized");
+    die("Yetkiniz bulunmamaktadır!");
 }
 header('Content-Type: text/html; charset=utf-8');
 require_once "functions.php";
