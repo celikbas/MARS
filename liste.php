@@ -28,9 +28,9 @@ if (!empty($_POST)) {
         $registered = filter_var($_POST['registered'], FILTER_SANITIZE_STRING);
         $sql = "DELETE FROM `reg_users` WHERE registered <= '$registered'";
         if ($db->query($sql)) {
-            $allDeleted = "Hepsi silindi!";
+            $allDeleted = "Hepsi silindi!\n";
         } else {
-            $allDeleted = "Bir sorun mu var? Herhalde silecek birşey yoktu!";
+            $allDeleted = "Bir sorun mu var? Herhalde silecek birşey yoktu!\n";
         }
     }
 }
@@ -47,34 +47,30 @@ if (!empty($_POST)) {
     <body>
         <div id="login-register">
             <h1><?=TITLE?></h1>
-            <pre>
                 <?php
                 if (isset($allDeleted)) {
                     echo "<br>" . $allDeleted;
                 }
-                echo "\n";
+                echo "<p>\n";
                 if ($all = $db->get_results("SELECT * FROM reg_users")) {
                     foreach ($all as $user) {
-                        echo $user->name . " &#60;" . $user->email . "&#62; \n";
+                        echo $user->name . " &#60;" . $user->email . "&#62;<br>";
                     }
                 }
                 ?>
-            </pre>
             <span></span>
+            <div><button onClick="window.location.reload();">Yenile</button></div>
         </div>
+
         <span></span>
 
         <footer>
             <form method="post" action="liste.php">
-
                 <h1>Hepsi Silinsin mi?</h1>
-
                 <input type="hidden" name="deleteall" value="1">
                 <input type="hidden" name="registered" value="<?=$user->registered?>">
                 <input type="submit" value="Sil">
-
                 <span></span>
-
             </form>
             <div id="tzine-actions"></div>
             <span class="close"></span>

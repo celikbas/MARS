@@ -2,7 +2,6 @@
 	Simple reset
 --------------------------*/
 
-
 *{
 	margin:0;
 	padding:0;
@@ -12,7 +11,6 @@
 /*-------------------------
 	General Styles
 --------------------------*/
-
 
 html{
 	background:url('../img/bg.jpg') #b46b24 no-repeat center center fixed;
@@ -49,7 +47,7 @@ section, footer, header, aside{
 	background-color:#242424;
 	padding: 65px 75px;
 	width:500px;
-	height:320px;
+	height:400px;
 	position:absolute;
 	top:50%;
 	left:50%;
@@ -132,62 +130,8 @@ section, footer, header, aside{
 }
 
 
-/*-------------------------
-	The protected page
---------------------------*/
-
-
-#protected-page{
-	width:980px;
-	margin:100px auto 50px;
-	text-align:center;
-	background-color:#fff;
-	border-radius:3px;
-	box-shadow:0 2px 5px rgba(0,0,0,0.2);
-	padding:85px 0;
-	color:#727272;
-	font-size:20px;
-}
-
-#protected-page h1{
-	font-size:40px;
-	margin:20px 0 50px;
-}
-
-#protected-page p{
-	line-height: 1.5;
-}
-
-#protected-page a{
-	
-	/* The logout button */
-
-	display:inline-block;
-	padding:10px 30px;
-	margin-top:50px;
-	text-decoration: none !important;
-	color:#fff !important;
-	background-color:#b9b9e2;
-	
-	font-weight:bold;
-	font-size:16px;
-
-	border-radius:3px;
-	border-bottom:3px solid #9f9fc2;
-}
-
-#protected-page a:hover{
-	background-color:#c3c3ea;
-}
-
-
-/*----------------------------
-	The Demo Footer
------------------------------*/
-
 
 footer{
-
 	width: 770px;
 	font: normal 16px Arial, Helvetica, sans-serif;
 	padding: 15px 35px;
@@ -206,56 +150,4 @@ footer{
 
 	box-shadow: 0 -1px 4px rgba(0,0,0,0.4);
 	z-index:1;
-}
-
-footer a.tz{
-	font-weight:normal;
-	font-size:16px !important;
-	text-decoration:none !important;
-	display:block;
-	margin-right: 300px;
-	text-overflow:ellipsis;
-	white-space: nowrap;
-	color:#bfbfbf !important;
-	z-index:1;
-}
-
-footer a.tz:before{
-	content: '';
-	background: url('http://cdn.tutorialzine.com/misc/enhance/v2_footer_bg.png') no-repeat 0 -53px;
-	width: 138px;
-	height: 20px;
-	display: inline-block;
-	position: relative;
-	bottom: -3px;
-}
-
-footer .close{
-	position: absolute;
-	cursor: pointer;
-	width: 8px;
-	height: 8px;
-	background: url('http://cdn.tutorialzine.com/misc/enhance/v2_footer_bg.png') no-repeat 0 0px;
-	top:10px;
-	right:10px;
-	z-index: 3;
-}
-
-footer #tzine-actions{
-	position: absolute;
-	top: 8px;
-	width: 500px;
-	right: 50%;
-	margin-right: -650px;
-	text-align: right;
-	z-index: 2;
-}
-
-footer #tzine-actions iframe{
-	display: inline-block;
-	height: 21px;
-	width: 95px;
-	position: relative;
-	float: left;
-	margin-top: 11px;
 }
