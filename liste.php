@@ -59,7 +59,7 @@ if (!empty($_POST)) {
                 }
                 ?>
             <span></span>
-            <div><button onClick="window.location.reload();">Yenile</button></div>
+            <div class="sub_div"><a href="liste.php"><input type="submit" value="Listeyi Güncelle" /></a></div>
         </div>
 
         <span></span>
