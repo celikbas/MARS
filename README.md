@@ -18,5 +18,6 @@ $ mv config_sample.php config.php && vim config.php
 - [x] Screenshout added
 - [ ] Multilanguage support
 - [ ] Subscribe to more than one list
+- [ ] Auto copy-paste probably using borderless textarea 
 
 

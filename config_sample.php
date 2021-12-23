@@ -8,6 +8,7 @@ $development_mode = PRODUCTION;
 $valid_passwords = array("listuser" => "listpassword");
 
 define('TITLE', 'MARS - Mailman Registration');
+define('LIST_URL', 'https://very.important.discussion/');
 
 define('HOST', "localhost");
 define('USER', "databaseuser");
