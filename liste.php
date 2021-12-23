@@ -72,7 +72,7 @@ if (!empty($_POST)) {
                 <input type="submit" value="Sil">
                 <span></span>
             </form>
-            <p><a href="https://listeci.itu.edu.tr/mailman/admin/uubf-l/members/add" target="_blank">https://listeci.itu.edu.tr/mailman/admin/uubf-l/members/add <span class="glyphicon glyphicon-new-window"></span></a></p>
+	    <p><a href="<?=LIST_URL?>" target="_blank"><?=LIST_URL?> <span class="glyphicon glyphicon-new-window"></span></a></p>
             <div id="tzine-actions"></div>
             <span class="close"></span>
         </footer>
