@@ -47,17 +47,18 @@ if (!empty($_POST)) {
     <body>
         <div id="login-register">
             <h1><?=TITLE?></h1>
-                <?php
+            <textarea style="color: black; background-color: transparent; border: 1px solid #333; padding: 6px;" rows="14" cols="65"><?php
                 if (isset($allDeleted)) {
-                    echo "<br>" . $allDeleted;
+                    echo $allDeleted;
                 }
-                echo "<p>\n";
                 if ($all = $db->get_results("SELECT * FROM reg_users")) {
                     foreach ($all as $user) {
-                        echo $user->name . " &#60;" . $user->email . "&#62;<br>";
+                        echo $user->name . " &#60;" . $user->email . "&#62;\n";
                     }
+                } else {
+                    echo "BOŞ";
                 }
-                ?>
+            ?></textarea>
             <span></span>
             <div class="sub_div"><a href="liste.php"><input type="submit" value="Listeyi Güncelle" /></a></div>
         </div>
