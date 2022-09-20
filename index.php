@@ -71,7 +71,8 @@ if (!empty($_POST)) {
         </form>
 
         <footer>
-            Kayıt yaparken lütfen yalnızca İTÜ uzantılı eposta adresinizi kullanınız!
+            <p align="center">Kayıt yaparken lütfen yalnızca İTÜ uzantılı eposta adresinizi kullanınız!</p>
+            <p align="center"><img src="assets/img/uubf-l_QR.png"></p>
             <div id="tzine-actions"></div>
             <span class="close"></span>
         </footer>
